@@ -21,8 +21,13 @@ ActiveRecord::Schema.define(version: 20180820054850) do
     t.time "open_time"
     t.time "close_time"
     t.integer "seat"
+<<<<<<< HEAD
     t.integer "owner_id"
     t.string "image"
+=======
+    t.string "image"
+    t.integer "owner_id"
+>>>>>>> upstream/develop
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["owner_id"], name: "index_bakeries_on_owner_id"
@@ -89,7 +94,10 @@ ActiveRecord::Schema.define(version: 20180820054850) do
     t.string "bread_name"
     t.string "user_name"
     t.string "user_email"
+<<<<<<< HEAD
     t.string "user"
+=======
+>>>>>>> upstream/develop
     t.text "content"
     t.integer "star_point"
     t.string "image"

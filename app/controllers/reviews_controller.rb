@@ -36,11 +36,17 @@ class ReviewsController < ApplicationController
         review = Review.find(params[:review_id])
         review.content = params[:input_content]
         review.star_point = params[:input_starPoint]
+<<<<<<< HEAD
         #review.update_column(:image, params[:input_img])
         review.remove_image!
         #review.image = params[:input_img]
         review.update_attributes(image: params[:input_img])
         review.save
+=======
+        # review.update_attributes(:image, params[:input_img])
+        review.update_attributes(image: params[:input_img])
+        # review.save
+>>>>>>> upstream/develop
 
         bread = Bread.find(params[:bread_id])
         star_avg = star_cal(params[:bread_id].to_i)
@@ -77,4 +83,5 @@ class ReviewsController < ApplicationController
         length = i.to_f
         return sum/length
     end
+
 end
