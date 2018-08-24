@@ -87,7 +87,6 @@
                     <a href = "/detail_item/index/<%=rb.bread_name%>">
                         <button class="collapsible">
                             <ul>
-                                <%# <li><%= image_tag 'scon.png' %>
                                 <li><%= image_tag(image_path("#{rb.image}")) %></li><br>
                                 <li>
                                     <span class="bread-name"><%= rb.bread_name %></span>[<%= rb.category %>]<br>
@@ -117,7 +116,7 @@
         <% @recommend_category.each do |r| %>
             <form action = "/search/index" method = "get">
                 <input type = "hidden" name = "keyword" value = <%= r %>></input>
-                <input type = "submit" value = #<%= r %>></input>
+                <button>#<%= r %></button>
             </form>
         <% end %>
     </div>
