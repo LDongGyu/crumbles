@@ -1,12 +1,13 @@
-
 .item-list-wrap{
   padding: 0px 0px 0px 50px;
 }
+
 .item-list-wrap .item-list-title{
   font-size: 1.6rem;
   text-align: center;
   margin-bottom: 4%;
 }
+
 .item-list-wrap .iten-list-title .form{
   margin: 2%;
 }
@@ -24,6 +25,7 @@
     width: 90%;
     font-size: 1.5rem;
 }
+
 .item-list-wrap a .bakery-btn:hover,
 .item-list-wrap a .bread-btn:hover {
     background-color: rgb(244, 244, 244);
@@ -44,21 +46,6 @@
 .item {
     text-align: center;
 }
-
-.collapsible ul li .bakery-name {
-  display: inline-block;
-  padding: 2%;
-  background-color: #ffffff;
-  color: #000000;
-  border-radius: .5rem;
-  border: 1px solid #ddd;
-  margin: 5%;
-  width: 90%;
-  font-size: 1rem;
-}
-
-
-
   
 // .collapsible:after {
 //     color: black;
@@ -227,4 +214,5 @@
     margin-right: auto;
   }
 }
+
 
